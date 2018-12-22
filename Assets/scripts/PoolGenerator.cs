@@ -5,8 +5,9 @@ using UnityEngine;
 public class PoolGenerator : MonoBehaviour {
     public GameObject Pool;
     public GameObject PoolObject;
-    private static int PoolSize = 100;
+    static int PoolSize = 100;
     public List<GameObject> PoolObjectList = new List<GameObject>(PoolSize);
+    
     // Use this for initialization
     void Start () {
         int i = 0;
@@ -19,11 +20,9 @@ public class PoolGenerator : MonoBehaviour {
 
             i++;
         }
+
+        Debug.Log(Pool.name + " Complete, list size: " + PoolObjectList.Capacity);
     }
 	
-	// Update is called once per frame
-	void Update () {
-        
-        
-    }
+	
 }

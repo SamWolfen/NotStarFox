@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 03837f0eae4d8434bbd98f0198cbd0ac
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: PEW
     100002: //RootNode
@@ -11,7 +11,12 @@ ModelImporter:
     2300000: PEW
     3300000: PEW
     4300000: PEW
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palette
+    second: {fileID: 2100000, guid: 11d22adef962831449c62fdbb1397b8c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,6 +67,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: ff3a3ec92b3c9214e847770177340f53
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: NotAnArwing
     100002: //RootNode
@@ -11,7 +11,12 @@ ModelImporter:
     2300000: NotAnArwing
     3300000: NotAnArwing
     4300000: NotAnArwing
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palette
+    second: {fileID: 2100000, guid: d73bf0e7c9376f147913b360b2485256, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,6 +67,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
