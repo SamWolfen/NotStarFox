@@ -92,16 +92,17 @@ public class MainControls : MonoBehaviour
 
         MoveVelo = new Vector3(HorizontalTrans, -VerticalTrans, 0);
         //Debug.Log(m_Rigidbody.velocity);
-        m_Rigidbody.MovePosition(transform.position + MoveVelo);
+        //m_Rigidbody.MovePosition(transform.position + MoveVelo);
+        this.transform.Translate(MoveVelo);
 
         //smooth out rotation
         if (SmoothedRotate.x > VerticalRotate)
         {
-            SmoothedRotate.x -= SmoothStep;
+            SmoothedRotate.x -= SmoothStep*2;
         }
         else if (SmoothedRotate.x < VerticalRotate)
         {
-            SmoothedRotate.x += SmoothStep;
+            SmoothedRotate.x += SmoothStep * 2;
         }
 
         if (SmoothedRotate.y > HorizontalRotate)
@@ -126,7 +127,8 @@ public class MainControls : MonoBehaviour
         }
 
 
-        PlaneShell.transform.eulerAngles = SmoothedRotate;
+        PlaneShell.transform.localEulerAngles = SmoothedRotate;
+       
 
 
 
