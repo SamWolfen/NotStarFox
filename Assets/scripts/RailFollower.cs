@@ -9,12 +9,15 @@ public class RailFollower : MonoBehaviour
     public GameObject CurrentNode;
     bool following;
     public float speed;
+    public float baseSpeed;
+
 
     // Start is called before the first frame update
     void Start()
     {
         CurrentNode = FirstNode;
         Debug.Log("Following "+ CurrentNode.name);
+        speed = baseSpeed * CurrentNode.GetComponent<NodeProperties>().speed;
 
 
     }
@@ -24,6 +27,7 @@ public class RailFollower : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, CurrentNode.transform.position, speed*Time.deltaTime);
         transform.LookAt(CurrentNode.transform.position, Vector3.up);
+        speed = baseSpeed * CurrentNode.GetComponent<NodeProperties>().speed;
         //this.transform.Translate(Vector3.forward*Time.deltaTime);
     }
 
@@ -35,6 +39,7 @@ public class RailFollower : MonoBehaviour
         if (collider.gameObject == CurrentNode)
         {
             CurrentNode = collider.gameObject.GetComponent<NodeProperties>().NextNode;
+            //speed = baseSpeed * CurrentNode.GetComponent<NodeProperties>().speed;
         }
     }
 

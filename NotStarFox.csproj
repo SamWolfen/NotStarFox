@@ -313,13 +313,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AsteroidBehaviour.cs" />
-    <Compile Include="Assets\AsteroidSpawn.cs" />
-    <Compile Include="Assets\NodeProperties.cs" />
-    <Compile Include="Assets\RailFollower.cs" />
+    <Compile Include="Assets\scripts\AsteroidBehaviour.cs" />
+    <Compile Include="Assets\scripts\AsteroidSpawn.cs" />
     <Compile Include="Assets\scripts\MainControls.cs" />
+    <Compile Include="Assets\scripts\NodeProperties.cs" />
     <Compile Include="Assets\scripts\PlayerLaserBehaviour.cs" />
     <Compile Include="Assets\scripts\PoolGenerator.cs" />
+    <Compile Include="Assets\scripts\RailFollower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Packages\com.unity.collab-proxy\Editor\Resources\Styles\CollabHistoryCommon.uss" />
