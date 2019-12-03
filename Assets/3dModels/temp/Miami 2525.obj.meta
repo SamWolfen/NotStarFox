@@ -11,6 +11,10 @@ ModelImporter:
     400004: //RootNode
     2100000: defaultMat
     2100002: mesh01Mat
+    2100004: default
+    2100006: default_highway
+    2100008: default_city_buildings.windows
+    2100010: default_city_buildings
     2300000: default
     2300002: mesh01
     3300000: default
