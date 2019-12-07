@@ -16,6 +16,8 @@ public class PlayerLaserBehaviour : MonoBehaviour {
         LocalZero = Plane.transform;
         Lasers.transform.position = LocalZero.position;
         Lasers.transform.rotation = LocalZero.rotation;
+        m_Rigidbody = GetComponent<Rigidbody>();
+        m_Rigidbody.velocity = transform.forward * speed;
 
     }
 
