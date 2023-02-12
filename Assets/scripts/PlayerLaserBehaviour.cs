@@ -10,6 +10,7 @@ public class PlayerLaserBehaviour : MonoBehaviour {
     Transform LocalZero;
     public float Lifetime;
     float initLifetime = 0;
+    float collideTime = 0.1f;
     private void OnEnable()
     {
         Debug.Log("enabled");
@@ -50,4 +51,9 @@ public class PlayerLaserBehaviour : MonoBehaviour {
 
         LocalZero = Plane.transform;
 	}
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Lifetime = collideTime;       
+    }
 }
